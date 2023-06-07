@@ -1,0 +1,278 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    color: crimson;
+    text-shadow: black 1px 1px;
+}
+
+header h1 {
+    margin-right: auto;
+
+}
+
+header li {
+    color: crimson;
+    display: inline-block;
+    font-size: large;
+    font-weight: bolder;
+    padding: 1px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+
+
+}
+header i{
+    padding-top: 8px;
+    width: 25px;
+    height: 25px;
+    
+    
+}
+header li :hover {
+
+    border-bottom: 2px solid crimson;
+    border-top: 2px solid crimson;
+    color: crimson;
+}
+.bigHover{
+    scrollbar-width: 0px;
+    scrollbar-width: none;
+    overflow: hidden;
+}
+.noBorder{
+    scrollbar-width: 0px;
+    scrollbar-width: none;
+    overflow: hidden;
+}
+
+.noBorder :hover{
+    border: none;
+
+    
+}
+.bigHover :hover{
+    
+    transform: scale(1.2);
+    
+}
+
+.scroll-container {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+
+    height: 100vh;
+}
+
+article {
+    
+    padding-top: 15vh;
+    height: 100vh;
+    text-align: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    scroll-snap-align: start;
+    text-shadow: white 1px -1px;
+}
+
+article p {
+    font-size: 20px;
+}
+
+.box {
+    text-shadow: black 1px 1px;
+    color: white;
+    /* Box */
+    border-radius: 25px;
+    border: 5px solid black;
+    background: linear-gradient(rgb(132, 224, 255), rgb(83, 83, 83));
+
+    padding: 5px;
+    margin: 4vw;
+    margin-top: 30vh;
+
+    width: 30vw;
+    height: 40vh;
+
+    scroll-behavior: smooth;
+
+
+}
+
+.box p::-webkit-scrollbar {
+    display: none;
+
+}
+
+.box p {
+    max-height: 30vh;
+}
+
+.box h1{
+    position: sticky;
+    text-decoration: underline black;
+}
+
+.left {
+    width: 30vw;
+    color: white;
+    text-shadow: none;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    text-align: justify;
+
+
+}
+
+.right {
+    width: 20vw;
+    float: right;
+    color: white;
+    text-shadow: none;
+    margin-right: 3.5vw;
+
+    text-align: justify;
+}
+
+.car1H1 {
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+
+
+#art1 {
+    background-image: url("fordInSnow.gif");
+}
+
+#art2 {
+    background-image: url("Tesla_M3.jpg");
+}
+
+#art3 {
+    background-image: url("winter-driving.png");
+}
+
+#art4 {
+    background-image: url("kidCar.gif");
+}
+
+#art1car1 {
+    background-image: url("bubbleEnter.jpeg");
+}
+
+#art2car1 {
+    background-image: url("GoldBeetle.jpg");
+}
+#art1About{
+    background-image: url("pics/manThinking.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #art1About{
+        background-position: right;
+    }
+    header{
+        padding: 10px 20px;
+    }
+    header li{
+        padding-top: 10px;
+    }
+    
+    .smallBox{
+        border-radius: 25px;
+        border: 5px solid black;
+        background: linear-gradient(rgb(132, 224, 255), rgb(83, 83, 83));
+
+        width: 40vw;
+        height: 40vh;
+        padding: 2vw;
+        
+        text-shadow: black 1px 1px;
+        color: white;
+        text-align: center;
+    }
+    .smallBox p{
+        font-size: 18px;
+    }
+   
+    .box{
+        justify-content: center;
+        width: 45vw;
+    }
+}
+@media only screen and (max-width: 400px) {
+
+    .smallBox{
+
+        width: 60vw;
+        /* float: none;
+        margin-left: 20vw; */
+    }
+
+    .smallBox p{
+        font-size: 15px;
+    }
+    .box{
+        height: 60vh;
+        width: 80vw;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        margin-left: calc(100vw/2 - 80vw/2);
+        margin-top: 20vh;
+        
+    }
+    .box p{
+        max-height: 50vh;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        
+    }
+    header h1{
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+    header li{
+        flex-direction: row;
+    }
+    
+
+}
